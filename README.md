@@ -1,6 +1,6 @@
 <div align="center">
   <br />
-      <img src="https://github.com/Andrew_Tsegaye/3D_Developer_Portfolio/public/assets/banner.png" alt="Project Banner">
+      <img src="https://ibb.co/tzd9fFK" alt="Project Banner">
   <br />
 
   <div>
