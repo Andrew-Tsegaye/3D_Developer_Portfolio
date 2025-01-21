@@ -82,8 +82,10 @@ const Projects = () => {
               target="_blank"
               rel="noreferrer"
             >
-              <p>Check GitHub Repo</p>
-              <img src="/assets/arrow-up.png" alt="arrow" className="w-3 h-3" />
+              <p className="transition hover:text-white-800">
+                Check GitHub Repo
+              </p>
+              <img src={currentProject.arrow} alt="arrow" className="w-3 h-3" />
             </a>
           </div>
 

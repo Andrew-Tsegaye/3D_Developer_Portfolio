@@ -71,6 +71,7 @@ export const myProjects = [
       boxShadow: "0px 0px 60px 0px #AA3C304D",
     },
     spotlight: "/assets/spotlight1.png",
+    arrow: "assets/arrow-up-1.svg",
     tags: [
       {
         id: 1,
@@ -110,6 +111,7 @@ export const myProjects = [
       boxShadow: "0px 0px 60px 0px rgba(35, 131, 96, 0.3)",
     },
     spotlight: "/assets/spotlight3.png",
+    arrow: "assets/arrow-up-2.svg",
     tags: [
       {
         id: 1,
@@ -147,6 +149,7 @@ export const myProjects = [
       boxShadow: "0px 0px 60px 0px #2F67B64D",
     },
     spotlight: "/assets/spotlight4.png",
+    arrow: "assets/arrow-up-3.svg",
     tags: [
       {
         id: 1,
@@ -184,6 +187,7 @@ export const myProjects = [
       boxShadow: "0px 0px 60px 0px #2F6DB54D",
     },
     spotlight: "/assets/spotlight2.png",
+    arrow: "assets/arrow-up-4.svg",
     tags: [
       {
         id: 1,
@@ -221,6 +225,7 @@ export const myProjects = [
       boxShadow: "0px 0px 60px 0px #635BFF4D",
     },
     spotlight: "/assets/spotlight5.png",
+    arrow: "assets/arrow-up-5.svg",
     tags: [
       {
         id: 1,
