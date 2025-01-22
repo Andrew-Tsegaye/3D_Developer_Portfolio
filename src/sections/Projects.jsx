@@ -25,9 +25,16 @@ const Projects = () => {
 
   useGSAP(() => {
     gsap.fromTo(
-      `.animatedText`,
-      { opacity: 0 },
-      { opacity: 1, duration: 1, stagger: 0.2, ease: "power2.inOut" }
+      ".arrow-img",
+      { x: 0, y: 0 },
+      {
+        x: 3,
+        y: -3,
+        duration: 0.5,
+        repeat: -1,
+        yoyo: true,
+        ease: "power1.inOut",
+      }
     );
   }, [selectedProjectIndex]);
 
@@ -35,7 +42,7 @@ const Projects = () => {
 
   return (
     <section className="c-space my-20">
-      <p className="head-text">My Selected Work</p>
+      <p className="head-text">My Selected Projects</p>
 
       <div className="grid lg:grid-cols-2 grid-cols-1 mt-12 gap-5 w-full">
         <div className="flex flex-col gap-5 relative sm:p-10 py-10 px-5 shadow-2xl shadow-black-200">
@@ -85,7 +92,11 @@ const Projects = () => {
               <p className="transition hover:text-white-800">
                 Check GitHub Repo
               </p>
-              <img src={currentProject.arrow} alt="arrow" className="w-3 h-3" />
+              <img
+                src={currentProject.arrow}
+                alt="arrow"
+                className="arrow-img w-3 h-3"
+              />
             </a>
           </div>
 
@@ -96,6 +107,18 @@ const Projects = () => {
             >
               <img src="/assets/left-arrow.png" alt="left arrow" />
             </button>
+
+            {/* Dots Pagination */}
+            <div className="flex gap-2">
+              {myProjects.map((_, index) => (
+                <div
+                  key={index}
+                  className={`w-2 h-2 rounded-full ${
+                    selectedProjectIndex === index ? "bg-white" : "bg-gray-400"
+                  }`}
+                ></div>
+              ))}
+            </div>
 
             <button
               className="arrow-btn"
