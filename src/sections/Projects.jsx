@@ -28,8 +28,8 @@ const Projects = () => {
       ".arrow-img",
       { x: 0, y: 0 },
       {
-        x: 3,
-        y: -3,
+        x: 4,
+        y: -4,
         duration: 0.5,
         repeat: -1,
         yoyo: true,
@@ -84,7 +84,7 @@ const Projects = () => {
             </div>
 
             <a
-              className="flex items-center gap-2 cursor-pointer text-white-600"
+              className="flex items-center gap-[5px] cursor-pointer text-white-600"
               href={currentProject.href}
               target="_blank"
               rel="noreferrer"
@@ -95,7 +95,7 @@ const Projects = () => {
               <img
                 src={currentProject.arrow}
                 alt="arrow"
-                className="arrow-img w-3 h-3"
+                className="arrow-img w-3 h-3 mt-1 mr-18"
               />
             </a>
           </div>
