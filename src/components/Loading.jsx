@@ -1,7 +1,8 @@
-import { Html, useProgress } from "@react-three/drei";
+import { Html } from "@react-three/drei";
 
+// Static loader: avoid subscribing to loading manager to prevent
+// cross-component setState warnings when other components render.
 const CanvasLoader = () => {
-  const { progress } = useProgress();
   return (
     <Html
       as="div"
@@ -22,7 +23,7 @@ const CanvasLoader = () => {
           marginTop: 40,
         }}
       >
-        {progress !== 0 ? `${progress.toFixed(2)}%` : "Loading..."}
+        Loading...
       </p>
     </Html>
   );
